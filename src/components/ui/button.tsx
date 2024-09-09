@@ -31,7 +31,7 @@ const buttonVariants = cva(
       variant: "default",
       size: "default",
     },
-  }
+  },
 );
 
 export interface ButtonProps
@@ -41,11 +41,11 @@ export interface ButtonProps
   startIcon?: React.ReactNode;
   endIcon?: React.ReactNode;
 }
-
+// TODO: fixed button color on focus
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     { className, variant, size, startIcon, endIcon, asChild = false, ...props },
-    ref
+    ref,
   ) => {
     const Comp = asChild ? Slot : "button";
     return (
@@ -59,7 +59,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {endIcon && endIcon}
       </Comp>
     );
-  }
+  },
 );
 Button.displayName = "Button";
 
