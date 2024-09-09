@@ -8,7 +8,7 @@ import { HeaderItems } from "./header-items";
 
 const Header = () => {
   return (
-    <header className="w-full p-4 shadow-md md:px-20 md:py-6">
+    <header className="w-full p-4 md:px-20 md:py-6">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-1">
           <IconPersonalLogo />
