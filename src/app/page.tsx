@@ -1,3 +1,11 @@
+import HeroView from "./_home/_sections/_hero/view";
+import SkillsView from "./_home/_sections/_skills/view";
+
 export default function Home() {
-  return <main className="h-80 w-80 flex justify-center items-center"></main>;
+  return (
+    <main className="flex flex-col">
+      <HeroView />
+      <SkillsView />
+    </main>
+  );
 }
