@@ -35,7 +35,7 @@ const HeroView = () => {
           </span>
         </div>
         <p className="text-Paragraph-P2-Regular text-Zinc-500">
-          I'm 20 years old, a web developer specializing in front-end
+          I am 20 years old, a web developer specializing in front-end
           development. I became interested in programming and choose it as my
           life path. Always energetic and eager to learn new skills and solve
           challenges via self-study and search methodes. I believe success comes
