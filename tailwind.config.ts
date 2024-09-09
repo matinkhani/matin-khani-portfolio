@@ -12,6 +12,7 @@ const config: Config = {
       spacing: {
         186: "186px",
         1440: "1440px",
+        72: "72px",
       },
       colors: {
         // Figma Colors:
