@@ -14,6 +14,9 @@ const config: Config = {
         1440: "1440px",
         72: "72px",
       },
+      screens: {
+        md: "1000px",
+      },
       colors: {
         // Figma Colors:
         Primary: {
