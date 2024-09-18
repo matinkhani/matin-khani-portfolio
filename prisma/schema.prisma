@@ -16,11 +16,11 @@ model Skill {
 }
 
 model Experience {
-  id          String   @id @default(cuid())
+  id          String @id @default(cuid())
   title       String
   description String
-  startTime   DateTime
-  endTime     DateTime
+  startTime   String
+  endTime     String
 }
 
 model Project {
