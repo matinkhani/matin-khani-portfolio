@@ -37,8 +37,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased`}>
-        <Header />
-        <Container>{children}</Container>
+        <Container>
+          <Header />
+          <div className="px-4 py-10 md:px-20 md:py-[60px]">{children}</div>
+        </Container>
       </body>
     </html>
   );
