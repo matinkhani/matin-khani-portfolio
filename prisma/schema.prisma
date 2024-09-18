@@ -13,7 +13,6 @@ datasource db {
 model Skill {
   id    String @id @default(cuid())
   title String
-  icon  String
 }
 
 model Experience {
