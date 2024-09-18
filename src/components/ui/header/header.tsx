@@ -1,10 +1,9 @@
 import React from "react";
 import HeaderSheetMenu from "./header-sheet-menu";
 import IconPersonalLogo from "@/components/icons/icon-personal-logo";
-import { Button } from "@/components/ui/button";
-import IconDownload from "@/components/icons/icon-download";
 import Link from "next/link";
 import { HeaderItems } from "./header-items";
+import HeaderDownloadBtn from "./header-download-btn";
 
 const Header = () => {
   return (
@@ -21,9 +20,7 @@ const Header = () => {
             </Link>
           ))}
         </div>
-        <Button endIcon={<IconDownload />} className="hidden md:flex">
-          Resume
-        </Button>
+        <HeaderDownloadBtn />
         <HeaderSheetMenu />
       </div>
     </header>
