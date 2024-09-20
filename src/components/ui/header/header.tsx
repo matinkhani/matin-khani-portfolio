@@ -15,7 +15,7 @@ const Header = () => {
         </div>
         <div className="hidden items-center gap-8 md:flex">
           {HeaderItems.map((item) => (
-            <Link href={item.link} key={item.title}>
+            <Link href={item.link} key={item.title} className="cursor-hover">
               {item.title}
             </Link>
           ))}

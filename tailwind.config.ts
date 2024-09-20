@@ -497,6 +497,11 @@ const config: Config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      cursor: {
+        custom: "url(/images/Arrow.svg), auto",
+        hover: "url(/images/Pointer.svg), auto",
+        "custom-text": "url(/images/Text.svg), auto",
+      },
     },
   },
   plugins: [

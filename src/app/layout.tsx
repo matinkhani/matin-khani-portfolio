@@ -36,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>
+      <body className={`cursor-custom antialiased`}>
         <Container>
           <Header />
           <div className="px-4 py-10 md:px-20 md:py-[60px]">{children}</div>
