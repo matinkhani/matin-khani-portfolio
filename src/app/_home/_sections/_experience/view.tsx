@@ -14,8 +14,6 @@ async function getExperiences() {
 
 const ExperiencesView = async () => {
   const experience = await getExperiences();
-  console.log(experience.res);
-  console.log("matin");
 
   return (
     <div className="mt-10 flex w-screen justify-center bg-Primary-Black pb-10">
