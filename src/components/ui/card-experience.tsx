@@ -17,7 +17,7 @@ const CardExperience: FC<Props> = ({
 }) => {
   return (
     <div
-      className={`flex w-[80%] flex-col gap-7 rounded-md border border-Zinc-500 px-6 py-8 ${index % 2 !== 0 ? "bg-Primary-Neutral" : "bg-Primary-Black"}`}
+      className={`flex w-[88%] flex-col gap-7 rounded-md border border-Zinc-500 px-6 py-8 ${index % 2 !== 0 ? "bg-Primary-Neutral" : "bg-Primary-Black"}`}
     >
       <p className="text-Heading-H5-SemiBold text-Primary-White">{title}</p>
       <p className="text-Heading-H6-SemiBold text-Zinc-300">
