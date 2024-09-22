@@ -26,6 +26,11 @@ body {
   }
 } */
 
+::selection {
+  color: #fff;
+  background: #450a0a;
+}
+
 body {
   overflow-x: hidden;
 }
