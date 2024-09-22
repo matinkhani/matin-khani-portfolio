@@ -10,8 +10,8 @@ import React from "react";
 const SocialItems = [
   { id: 1, icon: <IconGithub />, link: "https://github.com/matinkhani" },
   { id: 2, icon: <IconLinkedin />, link: "https://linkedin.com/in/matinkhani" },
-  { id: 3, icon: <IconMedium />, link: "" },
-  { id: 4, icon: <IconTelegram />, link: "" },
+  { id: 3, icon: <IconMedium />, link: "https://medium.com/@matinkhani" },
+  { id: 4, icon: <IconTelegram />, link: "https://t.me/khanimat" },
 ];
 
 const HeroView = () => {
