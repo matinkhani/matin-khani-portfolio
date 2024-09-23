@@ -2,7 +2,8 @@ export type ProjectT = {
   id: number;
   title: string;
   description: string;
-  techStacks: TechStackT[]; // A project has multiple tech stacks
+  techStacks: TechStackT[];
+  link: string;
 };
 
 export type TechStackT = {
