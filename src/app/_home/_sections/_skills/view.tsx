@@ -1,12 +1,10 @@
 import React from "react";
-import { SkillsT } from "@/types/model/skills.type";
-import CardSkills from "@/components/ui/card-skills";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 async function getSkills() {
   try {
-    let res = await fetch("http://localhost:3000/api/skills");
-    let data = await res.json();
+    const res = await fetch("http://localhost:3000/api/skills");
+    const data = await res.json();
     return data.res;
   } catch (error) {
     throw new Error("Failed to fetch skills");

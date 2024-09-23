@@ -11,7 +11,7 @@ const ContactMeView = () => {
       <FormContactMe />
       <div className="mt-3 flex flex-col gap-8">
         <p className="text-DisplayText(M)-ExtraBold">
-          Let's talk for Something special
+          Let&aposs talk for Something special
         </p>
         <p className="text-Paragraph-P2-Regular">
           I seek to push the limits of creativity to create high-engaging,

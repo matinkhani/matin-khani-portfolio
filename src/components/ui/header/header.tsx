@@ -1,5 +1,4 @@
 import React from "react";
-import HeaderSheetMenu from "./header-sheet-menu";
 import IconPersonalLogo from "@/components/icons/icon-personal-logo";
 import Link from "next/link";
 import { HeaderItems } from "./header-items";

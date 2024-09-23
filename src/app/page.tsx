@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import HeroView from "./_home/_sections/_hero/view";
 import SkillsView from "./_home/_sections/_skills/view";
 import ExperiencesView from "./_home/_sections/_experience/view";

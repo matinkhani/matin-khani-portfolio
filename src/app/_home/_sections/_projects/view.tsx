@@ -1,5 +1,5 @@
 import CardProject from "@/components/ui/card-project";
-import { ProjectT, TechStackT } from "@/types/model/project.type";
+import { ProjectT } from "@/types/model/project.type";
 import React from "react";
 
 async function getProjects(): Promise<ProjectT[]> {
@@ -38,7 +38,7 @@ const ProjectsView = async () => {
         <div className="mt-4 flex w-full flex-col items-center gap-10">
           {projects &&
             projects.map((prj: ProjectT, index: number) => (
-              <CardProject index={index} project={prj} />
+              <CardProject key={prj.id} index={index} project={prj} />
             ))}
         </div>
       </div>

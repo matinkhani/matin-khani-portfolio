@@ -4,8 +4,8 @@ import React from "react";
 
 async function getExperiences() {
   try {
-    let res = await fetch("http://localhost:3000/api/experience");
-    let data = await res.json();
+    const res = await fetch("http://localhost:3000/api/experience");
+    const data = await res.json();
     return data;
   } catch (error) {
     throw new Error("Failed to fetch experiences");
@@ -39,6 +39,7 @@ const ExperiencesView = async () => {
                 startTime={exp.startTime}
                 endTime={exp.endTime}
                 index={index}
+                key={exp.id}
               />
             ))}
         </div>

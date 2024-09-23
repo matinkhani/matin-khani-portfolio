@@ -2,7 +2,6 @@
 import React, { useRef } from "react";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
   SheetDescription,
   SheetTrigger,
