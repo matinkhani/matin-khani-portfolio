@@ -3,7 +3,10 @@ import React from "react";
 
 const AboutMeView = () => {
   return (
-    <div className="mt-10 flex flex-col items-center gap-5 bg-Primary-White pb-10 md:flex-row md:gap-20">
+    <div
+      id="about-me"
+      className="mt-10 flex flex-col items-center gap-5 bg-Primary-White pb-10 md:flex-row md:gap-20"
+    >
       <Image
         src="/images/about-me.png"
         alt="about me"

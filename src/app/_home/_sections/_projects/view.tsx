@@ -13,17 +13,18 @@ async function getProjects(): Promise<ProjectT[]> {
     const data = await res.json();
     return data.res;
   } catch (error) {
-    console.error(error);
     throw new Error("Failed to fetch projects");
   }
 }
 
 const ProjectsView = async () => {
   const projects = await getProjects();
-  console.log("Projects:", projects);
 
   return (
-    <div className="mt-10 flex w-screen justify-center bg-Primary-Black pb-10">
+    <div
+      id="projects"
+      className="mt-10 flex w-screen justify-center bg-Primary-Black pb-10"
+    >
       <div className="max-w-1440">
         <div className="flex h-72 w-full items-center justify-center">
           <span className="text-DisplayText(M)-Regular text-Primary-White">

@@ -16,7 +16,10 @@ const ExperiencesView = async () => {
   const experience = await getExperiences();
 
   return (
-    <div className="mt-10 flex w-screen justify-center bg-Primary-Black pb-10">
+    <div
+      id="experience"
+      className="mt-10 flex w-screen justify-center bg-Primary-Black pb-10"
+    >
       <div className="max-w-1440">
         <div className="flex h-72 w-full items-center justify-center">
           <span className="text-DisplayText(M)-Regular text-Primary-White">
