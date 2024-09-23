@@ -1,9 +1,13 @@
 "use client";
-import React from "react";
+import React, { FC } from "react";
 import { Button } from "../button";
 import IconDownload from "@/components/icons/icon-download";
 
-const HeaderDownloadBtn = () => {
+type Props = {
+  className?: string;
+};
+
+const HeaderDownloadBtn: FC<Props> = ({ className }) => {
   const HandleDownloadResume = () => {
     const resumeUrl = "/files/Matin-Khani-Resume.pdf";
     const link = document.createElement("a");
@@ -18,7 +22,7 @@ const HeaderDownloadBtn = () => {
     <Button
       onClick={HandleDownloadResume}
       endIcon={<IconDownload />}
-      className="hidden md:flex"
+      className={className}
     >
       Resume
     </Button>
