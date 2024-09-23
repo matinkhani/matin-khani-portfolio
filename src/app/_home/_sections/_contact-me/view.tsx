@@ -16,10 +16,6 @@ const ContactMeView = () => {
           I seek to push the limits of creativity to create high-engaging,
           user-friendly, and memorable interactive experiences.
         </p>
-        <p className="text-Paragraph-P2-Regular">
-          I seek to push the limits of creativity to create high-engaging,
-          user-friendly, and memorable interactive experiences.
-        </p>
         <p className="text-Heading-H5-Bold text-Primary-Black">
           ghkhanimatin@gmail.com
         </p>
