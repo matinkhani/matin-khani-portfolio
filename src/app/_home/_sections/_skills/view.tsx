@@ -16,7 +16,7 @@ const SkillsView = async () => {
   const skills = await getSkills();
 
   return (
-    <div className="mt-10">
+    <div id="skills" className="mt-10">
       <div className="flex h-72 w-full items-center justify-center">
         <span className="text-DisplayText(M)-Regular text-Primary-Black">
           My
@@ -26,7 +26,7 @@ const SkillsView = async () => {
         </span>
       </div>
 
-      <div className="mt-4 flex w-full flex-wrap justify-center gap-5">
+      <div className="mt-4 flex w-full flex-wrap justify-start gap-5">
         {skills.res &&
           skills.res.map((skill: SkillsT) => (
             <CardSkills title={skill.title} key={skill.id} />
