@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import Container from "@/components/ui/container";
 import Header from "@/components/ui/header/header";
 import { Toaster } from "@/components/ui/toaster";
+import Footer from "@/components/ui/footer/footer";
 // import { Sora } from "next/font/google";
 
 // const geistSans = localFont({
@@ -42,6 +43,7 @@ export default function RootLayout({
           <Header />
           <div className="px-4 py-10 md:px-20 md:py-[60px]">{children}</div>
         </Container>
+        <Footer />
         <Toaster />
       </body>
     </html>
