@@ -1,4 +1,5 @@
 import { ProjectT, TechStackT } from "@/types/model/project.type";
+import Link from "next/link";
 import React, { FC } from "react";
 
 type Props = {
@@ -33,6 +34,14 @@ const CardProject: FC<Props> = ({ project, index }) => {
             </p>
           ))}
       </div>
+      {project.link && (
+        <Link
+          className="text-Paragraph-P2-Regular text-Zinc-300 underline"
+          href={project.link}
+        >
+          Link to Project
+        </Link>
+      )}
     </div>
   );
 };
