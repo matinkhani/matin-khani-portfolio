@@ -55,14 +55,16 @@ const FormContactMe = () => {
         publicKey: publicKey,
       })
       .then(() => {
-        console.log("Email sent successfully");
         toast({
-          description: "Email sent successfully",
+          description: "Email sent successfully!",
         });
         form.reset();
       })
-      .catch((error) => {
-        console.error("Error", error);
+      .catch(() => {
+        toast({
+          description: "Something went wrong!",
+          variant: "destructive",
+        });
       })
       .finally(() => {
         setLoading(false);
