@@ -42,7 +42,7 @@ const AboutMeView = () => {
         </p>
         <p>
           Outside of my work, I am always on the lookout for opportunities to
-          expand my knowledge and grow as a developer. Whether it&aposs
+          expand my knowledge and grow as a developer. Whether it is
           experimenting with new frameworks, delving into advanced coding
           practices, or collaborating with others in the tech community, I am
           dedicated to pushing the boundaries of what I can achieve. My goal is
