@@ -32,6 +32,11 @@ export const metadata: Metadata = {
   openGraph: {
     images: "/images/og.jpeg",
   },
+  twitter: {
+    card: "summary_large_image",
+    images: "/images/og.jpeg",
+  },
+  metadataBase: new URL("http://matin-khani.ir"),
 };
 
 export default function RootLayout({
