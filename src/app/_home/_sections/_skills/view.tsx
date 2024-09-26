@@ -1,18 +1,10 @@
 import React from "react";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-
-async function getSkills() {
-  try {
-    const res = await fetch("http://localhost:3000/api/skills");
-    const data = await res.json();
-    return data.res;
-  } catch (error) {
-    throw new Error("Failed to fetch skills");
-  }
-}
+import { Skills } from "../../data/skills/data";
+// import prisma from "@/lib/db";
 
 const SkillsView = async () => {
-  const skills = await getSkills();
+  // const skills = await prisma.skill.findMany();
 
   return (
     <div id="skills" className="mt-10">
@@ -26,7 +18,7 @@ const SkillsView = async () => {
       </div>
 
       <div className="mt-4 flex w-full flex-wrap justify-start gap-5">
-        <HoverEffect items={skills} />
+        <HoverEffect items={Skills} />
       </div>
     </div>
   );

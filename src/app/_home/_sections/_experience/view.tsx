@@ -1,19 +1,11 @@
 import CardExperience from "@/components/ui/card-experience";
 import { ExperienceT } from "@/types/model/experience.type";
 import React from "react";
-
-async function getExperiences() {
-  try {
-    const res = await fetch("http://localhost:3000/api/experience");
-    const data = await res.json();
-    return data;
-  } catch (error) {
-    throw new Error("Failed to fetch experiences");
-  }
-}
+import { Experiences } from "../../data/experiences/data";
+// import prisma from "@/lib/db";
 
 const ExperiencesView = async () => {
-  const experience = await getExperiences();
+  // const experience = await prisma.experience.findMany();
 
   return (
     <div
@@ -31,17 +23,16 @@ const ExperiencesView = async () => {
         </div>
 
         <div className="mt-4 flex w-full flex-col items-center gap-5">
-          {experience.res &&
-            experience.res.map((exp: ExperienceT, index: number) => (
-              <CardExperience
-                title={exp.title}
-                description={exp.description}
-                startTime={exp.startTime}
-                endTime={exp.endTime}
-                index={index}
-                key={exp.id}
-              />
-            ))}
+          {Experiences.map((exp: ExperienceT, index: number) => (
+            <CardExperience
+              title={exp.title}
+              description={exp.description}
+              startTime={exp.startTime}
+              endTime={exp.endTime}
+              index={index}
+              key={exp.id}
+            />
+          ))}
         </div>
       </div>
     </div>

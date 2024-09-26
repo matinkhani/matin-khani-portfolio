@@ -1,24 +1,15 @@
 import CardProject from "@/components/ui/card-project";
 import { ProjectT } from "@/types/model/project.type";
 import React from "react";
-
-async function getProjects(): Promise<ProjectT[]> {
-  try {
-    const res = await fetch("http://localhost:3000/api/projects", {
-      cache: "no-store",
-    });
-    if (!res.ok) {
-      throw new Error("Failed to fetch projects");
-    }
-    const data = await res.json();
-    return data.res;
-  } catch (error) {
-    throw new Error("Failed to fetch projects");
-  }
-}
+import { Projects } from "../../data/projects/data";
+// import prisma from "@/lib/db";
 
 const ProjectsView = async () => {
-  const projects = await getProjects();
+  // const projects = await prisma.project.findMany({
+  //   include: {
+  //     techStacks: true,
+  //   },
+  // });
 
   return (
     <div
@@ -36,10 +27,9 @@ const ProjectsView = async () => {
         </div>
 
         <div className="mt-4 flex w-full flex-col items-center gap-10">
-          {projects &&
-            projects.map((prj: ProjectT, index: number) => (
-              <CardProject key={prj.id} index={index} project={prj} />
-            ))}
+          {Projects.map((prj: ProjectT, index: number) => (
+            <CardProject key={prj.id} index={index} project={prj} />
+          ))}
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 export type ProjectT = {
-  id: number;
+  id: string;
   title: string;
   description: string;
   techStacks: TechStackT[];
@@ -7,8 +7,7 @@ export type ProjectT = {
 };
 
 export type TechStackT = {
-  id: number;
+  id: string;
   name: string;
-  projectId: number; // Foreign key linking to the project
-  project?: ProjectT; // Optional to avoid circular reference issues
+  // project?: ProjectT; // Optional to avoid circular reference issues
 };
