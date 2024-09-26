@@ -9,10 +9,10 @@ type Props = {
 
 const HeaderDownloadBtn: FC<Props> = ({ className }) => {
   const HandleDownloadResume = () => {
-    const resumeUrl = "/files/Matin-Khani-Resume.pdf";
+    const resumeUrl = "/files/Matin-Khani.pdf";
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "Matin-Khani-Resume.pdf";
+    link.download = "Matin-Khani.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
