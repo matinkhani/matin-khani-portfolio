@@ -30,6 +30,7 @@ const ExperiencesView = async () => {
               startTime={exp.startTime}
               endTime={exp.endTime}
               index={index}
+              companyDescription={exp.companyDescription}
               key={exp.id}
             />
           ))}

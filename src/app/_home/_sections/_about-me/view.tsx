@@ -23,7 +23,7 @@ const AboutMeView = () => {
           </span>
         </div>
         <p>
-          Hello! I’m Matin, a 20-year-old frontend developer with a passion for
+          Hello! I’m Matin, a 21-year-old frontend developer with a passion for
           creating engaging and dynamic web experiences. My journey into
           programming began with a fascination for how technology shapes our
           world, and I chose to pursue it as my career path. Specializing in

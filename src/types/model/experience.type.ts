@@ -4,4 +4,5 @@ export type ExperienceT = {
   description: string;
   startTime: string;
   endTime: string;
+  companyDescription: string;
 };

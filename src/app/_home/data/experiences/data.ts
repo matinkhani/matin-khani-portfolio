@@ -3,18 +3,27 @@ import { ExperienceT } from "@/types/model/experience.type";
 export const Experiences: ExperienceT[] = [
   {
     id: Math.random().toString(),
-    title: "HiWEB",
-    description:
-      "As a frontend developer at HiWEB, I redesigned and developed the Farda Insurance admin panel, created the HiWEB Optical Fiber panel for secure modem management, built the Farda Insurance Investors panel for stock and payment management, and resolved critical bugs in the Farda Insurance user panel.",
-    startTime: "Mar 2024",
+    title: "Iran Jack",
+    description: `As a Frontend Developer at Iran Jack, I contributed to the development of OptiGarment, a specialized software designed to optimized clothing production.
+      Improved code readability, maintainability, and overall project performance by restructure the project architecture into a hybrid feature-based and modular-based structure, applying DRY (Don’t Repeat Yourself) principles to eliminate code duplication.
+      Created reusable and accessible UI components using Material UI framework.
+      Collaborated with a team of frontend developers, backend developers, ui ux designers, product managers and etc.`,
+    startTime: "Nov 2024",
     endTime: "Present",
+    companyDescription:
+      "Iran Jack is the official representative of Jack Sewing Machine Co. in China for Iran.",
   },
   {
     id: Math.random().toString(),
-    title: "Makeen Acamdey",
-    description:
-      "During my internship at Makeen Academy, I learned how to develop Single Page Applications (SPA) using ReactJS, optimized performance with TypeScript, and gained the essential skill of learning how to learn.",
-    startTime: "Apr 2023",
-    endTime: "Sep 2023",
+    title: "HiWEB",
+    description: `Redesigned and developed the Farda Insurance admin panel , improving usability and performance.
+Developed the HiWEB Optical Fiber panel, enhancing workflow efficiency for large-scale installations.
+Created the Farda Insurance Investors panel.
+Collaborated on fixing bugs and optimizing the Farda Insurance user panel.
+`,
+    startTime: "Feb 2024",
+    endTime: "Oct 2024",
+    companyDescription:
+      "HiWEB is providing communication services in more than 450 cities all around Iran",
   },
 ];

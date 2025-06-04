@@ -6,6 +6,7 @@ type Props = {
   description: string;
   startTime: string;
   endTime: string;
+  companyDescription: string;
 };
 
 const CardExperience: FC<Props> = ({
@@ -14,6 +15,7 @@ const CardExperience: FC<Props> = ({
   startTime,
   endTime,
   index,
+  companyDescription,
 }) => {
   return (
     <div
@@ -23,7 +25,12 @@ const CardExperience: FC<Props> = ({
       <p className="text-Heading-H6-SemiBold text-Zinc-300">
         {startTime} - {endTime}
       </p>
-      <p className="text-Paragraph-P2-Regular text-Zinc-300">{description}</p>
+      <p className="text-Paragraph-P2-Regular text-Zinc-300">
+        {companyDescription}
+      </p>
+      <p className="whitespace-pre-line text-Paragraph-P2-Regular text-Zinc-300">
+        {description}
+      </p>
     </div>
   );
 };
